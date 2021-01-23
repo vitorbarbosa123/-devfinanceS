@@ -1,8 +1,4 @@
-:root {
-  --dark-blue:#363f5f;
-  --green: #49aa26;
-  --light-green: #3dd705; }
-
+/*Colors*/
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +18,7 @@ html {
 h2 {
   margin-top: 3.2rem;
   margin-bottom: 0.8rem;
-  color: var(--dark-blue);
+  color: #363f5f;
   font-weight: normal; }
 
 .sr-only {
@@ -66,7 +62,7 @@ h2 {
   padding: 1.5rem 2rem;
   border-radius: 0.25rem;
   margin-bottom: 2rem;
-  color: var(--dark-blue); }
+  color: #363f5f; }
 
 .card h3 {
   font-weight: normal;
@@ -107,13 +103,13 @@ button {
   height: 50px;
   border: none;
   color: white;
-  background-color: var(--green);
+  background-color: #49AA26;
   padding: 0;
   border-radius: 0.25rem;
   cursor: pointer; }
 
 button:hover {
-  background-color: var(--light-green); }
+  background-color: #3dd705; }
 
 .button.new {
   display: inline-block; }
@@ -135,7 +131,7 @@ button:hover {
 footer {
   text-align: center;
   padding: 4rem 0 2rem;
-  color: var(--dark-blue);
+  color: #363f5f;
   opacity: 0.6; }
 
 #form {
@@ -234,7 +230,7 @@ table tbody tr:hover {
   opacity: 1; }
 
 td.description {
-  color: var(--dark-blue); }
+  color: #363f5f; }
 
 td.income {
   color: #12a454; }

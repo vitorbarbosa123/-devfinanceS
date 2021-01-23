@@ -1,0 +1,55 @@
+#transaction {
+    display: block;
+    overflow-x: auto ;
+    width: 100%;
+}
+#data-table {
+    width: 100%;
+    border-spacing: 0 0.5rem;
+    color: #969cb3;
+
+}
+
+table thead th {
+    background: white;
+    
+    font-weight: normal;
+    padding: 1rem 2rem;
+    text-align: left;
+
+}
+
+table td {
+    background: white;
+    padding: 1rem 2rem;
+    
+}
+
+table thead th:first-child,
+table thead td:first-child {
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+
+table thead th:last-child,
+table thead td:last-child {
+    border-radius: 0 0.25rem 0.25rem 0;
+}
+table tr {
+    opacity: 0.7
+}
+
+table tbody tr:hover {
+    opacity: 1
+}
+
+td.description {
+    color: $dark-blue;
+}
+
+td.income {
+    color: $lighter-green;
+}
+
+td.expense {
+    color: $red;
+}
