@@ -1,6 +1,8 @@
 /*Global*/
 :root {
     --dark-blue:#363f5f;
+    --green: #49aa26;
+    --light-green: #3dd705;
 }
 * {
     margin: 0;
@@ -10,6 +12,23 @@
 body {
     background: #f0f2f5;
     font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 93.75%;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;  
+
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border-width: 0;
 }
 
 .container {
@@ -25,6 +44,65 @@ h2 {
     color: var(--dark-blue);
 
     font-weight: normal;
+}
+
+/*Link ands buttons*/
+
+a {
+    color: #49AA26;
+    text-decoration: none;
+}
+a:hover {
+    color: #3dd705;
+}
+
+.button.new {
+    display: inline-block;
+    margin-botton: .8rem;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+
+    border: none;
+
+    color: white;
+    background-color: var(--green);
+
+    padding: 0;
+
+    border-radius: 0.25rem;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--light-green);
+}
+
+.button.new {
+    display: inline-block;
+    margin-bottom: ;
+}
+
+.button.cancel {
+    color: #e92929;
+    border: 2px #e92929 solid;
+    border-radius: 0.25rem;
+
+    height: 50px;
+    width: 48%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0.6;
+}
+
+.button.cancel:hover {
+    opacity: 1;
 }
 /*Header*/
 
@@ -62,9 +140,13 @@ header {
     color: var(--dark-blue);
 }
 
-.card h2 {
+.card h3 {
     font-weight: normal;
     font-size: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .card p {
@@ -80,11 +162,16 @@ header {
 }
 
 /*Table*/
-
+#transaction {
+    display: block;
+    overflow-x: auto ;
+    width: 100%;
+}
 #data-table {
     width: 100%;
     border-spacing: 0 0.5rem;
     color: #969cb3;
+
 }
 
 table thead th {
@@ -102,12 +189,14 @@ table td {
     
 }
 
-table thead th:first-child {
+table thead th:first-child,
+table thead td:first-child {
     border-radius: 0.25rem 0 0 0.25rem;
 }
 
-table thead td:first-child {
-
+table thead th:last-child,
+table thead td:last-child {
+    border-radius: 0 0.25rem 0.25rem 0;
 }
 table tr {
     opacity: 0.7
