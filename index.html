@@ -72,7 +72,7 @@
         <div class="modal">
             <div id="form">
                 <h2>Nova transação</h2>
-                <form action="" id="form-add">
+                <form action="" onsubmit="Form.submit(event)" id="form-add">
                     <div class="input-group">
                         <label class="sr-only"   
                                 for="description">Descrição</label>
@@ -119,13 +119,12 @@
     </footer>
 
     <script src="./app/js/modal.js"></script>
-    <script src="./app/js/transactions.js"></script>
-    <script src="./app/js/App.js"></script>
-    <script src="./app/js/Form.js"></script>
-    <script src="./app/js/Tools.js"></script>
-    <script src="./app/js/DOM.js"></script>
-    
     <script src="./app/js/Storage.js"></script>
+    <script src="./app/js/transactions.js"></script>
+    <script src="./app/js/DOM.js"></script>
+    <script src="./app/js/Tools.js"></script>
+    <script src="./app/js/Form.js"></script>
+    <script src="./app/js/App.js"></script>
 </body>
 
 </html>
