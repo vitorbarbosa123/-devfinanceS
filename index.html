@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dev.finance$</title>
 
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./app/sass/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,600;1,100;1,400;1,600&display=swap"
@@ -31,21 +31,21 @@
                     <span>Entradas</span>
                     <img src="./assets/income.svg" alt="Entrada">
                 </h3>
-                <p>R$ 5.000,00</p>
+                <p id="incomeDisplay"></p>
             </div>
             <div class="card">
                 <h3>
                     <span>Saídas</span>
                     <img src="./assets/expense.svg" alt="Entrada">
                 </h3>
-                <p>R$ 2.000,00</p>
+                <p id="expenseDisplay"></p>
             </div>
             <div class="card total">
                 <h3>
                     <span>Total</span>
                     <img src="./assets/total.svg" alt="Entrada">
                 </h3>
-                <p>R$ 3.000,00</p>
+                <p id="totalDisplay"></p>
 
             </div>
         </section>
@@ -62,27 +62,7 @@
                         <th></th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td class="descriptions">Luz</td>
-                        <td class="expense">-R$ 69,00</td>
-                        <td class="date">23/01/2021</td>
-                        <td><img src="./assets/minus.svg" alt=""></td>
-                    </tr>
-
-                    <tr>
-                        <td class="descriptions">Internet</td>
-                        <td class="expense">-R$ 96,00</td>
-                        <td class="date">23/01/2021</td>
-                        <td><img src="./assets/minus.svg" alt=""></td></td>
-                    </tr>
-
-                    <tr>
-                        <td class="descriptions">Inter</td>
-                        <td class="income">R$ 1100,00</td>
-                        <td class="date">23/01/2021</td>
-                        <td><img src="./assets/minus.svg" alt=""></td></td>
-                    </tr>
+                <tbody id="table-wrapper">
                 </tbody>
             </table>
         </section>
@@ -92,7 +72,7 @@
         <div class="modal">
             <div id="form">
                 <h2>Nova transação</h2>
-                <form action="">
+                <form action="" id="form-add">
                     <div class="input-group">
                         <label class="sr-only"   
                                 for="description">Descrição</label>
@@ -128,7 +108,7 @@
                     <div class="input-group actions">
                         <a onclick="Modal.close()"
                         href="#" class="button cancel">Cancelar</a>
-                        <button>Salvar</button>
+                        <button id="btnsave">Salvar</button>
                     </div>   
                 </form>
             </div>
@@ -139,6 +119,13 @@
     </footer>
 
     <script src="./app/js/modal.js"></script>
+    <script src="./app/js/transactions.js"></script>
+    <script src="./app/js/App.js"></script>
+    <script src="./app/js/Form.js"></script>
+    <script src="./app/js/Tools.js"></script>
+    <script src="./app/js/DOM.js"></script>
+    
+    <script src="./app/js/Storage.js"></script>
 </body>
 
 </html>
