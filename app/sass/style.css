@@ -50,7 +50,7 @@ h2 {
   visibility: visible; }
 
 .modal {
-  background: #F0F2F5;
+  background: var(--bg);
   padding: 2.4rem;
   width: 90%;
   max-width: 500px;
@@ -58,7 +58,7 @@ h2 {
   z-index: 1; }
 
 .card {
-  background: white;
+  background: var(--bg-panel);
   padding: 1.5rem 2rem;
   border-radius: 0.25rem;
   margin-bottom: 2rem;
@@ -137,8 +137,9 @@ footer {
 #form {
   max-width: 500px; }
 
-#fomr h2 {
-  margin-top: 0; }
+#form h2 {
+  margin-top: 0;
+  color: var(--color-headings); }
 
 #form form input {
   border: none;
@@ -188,7 +189,8 @@ header {
   visibility: visible; }
 
 .modal {
-  background: #F0F2F5;
+  background: var(--bg);
+  
   padding: 2.4rem;
   width: 90%;
   max-width: 500px;
