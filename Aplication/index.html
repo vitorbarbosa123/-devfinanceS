@@ -13,12 +13,21 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./responsive.css">
     <link rel="stylesheet" href="./dark-theme.css">
+
+     <!-- Enjoyhint library -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/kinetic/kinetic.min.js"></script>
+    <script src="node_modules/jquery.scrollto/jquery.scrollTo.min.js"></script>
+    
+        
+    <link href="node_modules/xbs-enjoyhint/enjoyhint.css" rel="stylesheet">
+    <script src="node_modules/xbs-enjoyhint/enjoyhint.min.js"></script>
     
     
 </head>
 
 <body>
-
+    
     <header>
         <img src="./assets/logo.svg" alt="Logo Dev Finance">
 
@@ -65,7 +74,7 @@
         <section id="transaction">
             <h2 class="sr-only">Transações</h2>
 
-            <a href="#" class="button new" onclick="Modal.open()">Nova transação</a>
+            <a href="#" class="button new transactionEnjoy" onclick="Modal.open()">Nova transação</a>
             <table id="data-table">
                 <thead>
                     <tr>
@@ -94,6 +103,7 @@
                                 id="description" 
                                 name="description"
                                 placeholder="Descrição"
+                                class="descriptionEnjoy"
                                 >
                     </div>
                     <div class="input-group">
@@ -105,6 +115,7 @@
                                 id="amount" 
                                 name="description"
                                 placeholder="0,00"
+                                class="valueEnjoy"
                                 >
                         <small class="help">Use o sinal - (negativo) para despesas e , (virgula) para casas decimais.</small>
                     </div>
@@ -116,12 +127,13 @@
                                 id="date" 
                                 name="date"
                                 placeholder="Data"
+                                class="dateEnjoy"
                                 >
                     </div>
                     <div class="input-group actions">
                         <a onclick="Modal.close()"
-                        href="#" class="button cancel">Cancelar</a>
-                        <button id="btnsave">Salvar</button>
+                        href="#" class="button cancel">Fechar</a>
+                        <button id="btnsave" class="btnsaveEnjoy">Salvar</button>
                     </div>   
                 </form>
             </div>
@@ -145,6 +157,7 @@
     <script src="./app/js/App.js"></script>
     <script src="./app/js/dark-theme.js"></script>
     <script src="https://kit.fontawesome.com/849d2ecd14.js" crossorigin="anonymous"></script>
+    <script src="enjoyhint.js"></script>
 
 </body>
 
